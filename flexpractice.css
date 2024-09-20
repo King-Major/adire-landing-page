@@ -1,0 +1,17 @@
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.press1{
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: darksalmon;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: rgb(212, 212, 212);
+  border-style: solid;
+  margin-left: 15px;
+}
