@@ -1,6 +1,6 @@
 *{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -52,10 +52,15 @@ p{
   min-width: 300px;
 }
 
+.img-adire {
+  height: 400px;
+}
+
 .col-2{
   max-width: 100%;
   padding: 0  50px;
 }
+
 
 .col-1 h1{
   font-size: 40px;
@@ -316,8 +321,12 @@ ul{
   .close-menu-icon {
     display: none;
   }
+  .img-adire {
+    height: 300px;
+  }
+  
   .small-container .row .col-2 img{
-    width: 300px;
+    width: 250px;
   }
   
   .col-4 img{
@@ -332,6 +341,10 @@ ul{
     text-align: center;
     display: flex;
     flex-direction: column;
+  }
+
+  .img-adire {
+    height: 300px;
   }
 
   .col-2, .col-3, .col-4{
