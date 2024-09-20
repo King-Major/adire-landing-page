@@ -64,6 +64,7 @@ p{
   margin-bottom: 25px;
 }
 
+
 .btn{
   display: inline-block;
   background-color: #ff523b;
@@ -271,6 +272,12 @@ ul{
   display: none;
 }
 
+.close-menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
  body{
   width: 100%;
  }
@@ -282,11 +289,15 @@ ul{
 
     position: absolute;
     top: 120px;
-    left: 0;
+    left: 150px;
     background: #333;
-    width: 100%;
+    width: 70%;
+    
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: 0.5s;
+  }
+  .js-navbar{
+   display: none;
   }
   nav ul li{
     display: block;
@@ -299,19 +310,34 @@ ul{
 
   }
   .menu-icon{
-    display: block;
+    display: flex;
     cursor: pointer;
+  }
+  .close-menu-icon {
+    display: none;
+  }
+  .small-container .row .col-2 img{
+    width: 300px;
+  }
+  
+  .col-4 img{
+    width: 100%;
   }
 }
 
 /*media query*/
 
 @media only screen and (max-width: 600px){
-  .row{
+  .small-container   .row{
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .col-2, .col-3, .col-4{
     flex-basis: 100%;
+  }
+  .col-4 img{
+    width:fit-content;
   }
 }

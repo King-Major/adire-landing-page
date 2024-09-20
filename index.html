@@ -14,32 +14,35 @@
         <img src="logo.png" width="125px">
       </div>
       <nav>
-        <ul id=" ">
+        <ul class="js-navbar">
           <li>
-            <a href="">home </a>
+            <a href="">Home </a>
           </li>
           <li>
-            <a href="">prooducts</a>
+            <a href="">Prooducts</a>
           </li>
           <li>
-            <a href="">about</a>
+            <a href="">About</a>
           </li>
           <li>
-            <a href="">contact</a>
+            <a href="">Contact</a>
           </li>
           <li>
-            <a href="">account</a>
+            <a href="">Account</a>
           </li>
         </ul>
       </nav>
       <img src="cart.png" width 30px height="30px">
-      <img src="Hamburger.png" width 30px height="30px" class="menu-icon" onclick="menutoggle()">
+      <div>
+      <img src="Hamburger.png" width 30px height="30px" class="menu-icon" onclick="showSidebar()">
+      <img src="close_30dp_000000_FILL0_wght400_GRAD0_opsz24.png" width 30px height="30px" class="close-menu-icon" onclick="hideSidebar()">
+    </div>
     </div>
 
     <div class="row">
       <div class="col-1">
-        <h1>Welcome To The World Of<br> Dynamic Crafting!</h1>
-        <p>we customise super unique items, for home decore, kids roms,<br> personalised tiedye fabrics and more....</p>
+        <h1>Welcome To our World <br> Aunty Fehintola </h1>
+        <p>we customise super unique items, for home decore, kids roms,<br> clothing and shoes </p>
         <a href="" class="btn">explore now &#8594;</a>
       </div>
 
@@ -227,7 +230,7 @@
             <div class="small-container">
               <div class="row">
                 <div class="col-2">
-                  <img src="images (1).jpeg">
+                  <img src="images (1).jpeg" >
                 </div>
                 <div class="col-3">
                   <p>Exclusively Available On Adire By Nona</p>
@@ -340,17 +343,23 @@
     </div>
     <!---------------------js toggle menu------------->
     <script>
-      var menuitems = document.getElementById("menuitems");
-
-      menuitems.style.maxHeight = "0px";
-
-      function menutoggle(){
-        if(menuitems.style.maxHeight == "0px"){
-          menuitems.style.maxHeight = "200px"
-        }
-        else{
-          menuitems.style.maxHeight = "0px"
-        }
+      function showSidebar(){
+        let menuSidebar = document.querySelector('.menu-icon')
+        menuSidebar.style.display = 'none';
+        let xBurger = document.querySelector('.close-menu-icon')
+        xBurger.style.display = 'block';
+        let navbar = document.querySelector('.js-navbar')
+        navbar.style.display = 'block';
+        
+      }
+      function hideSidebar(){
+        let menuSidebar = document.querySelector('.menu-icon')
+        menuSidebar.style.display = 'block';
+        let xBurger = document.querySelector('.close-menu-icon')
+        xBurger.style.display = 'none';
+        let navbar = document.querySelector('.js-navbar')
+        navbar.style.display = 'none';
+        
       }
     </script>
   </body>
